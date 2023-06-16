@@ -1,0 +1,27 @@
+.wrap {
+    display:flex;
+    width:100vw;
+}
+user_block{
+    display:flex;
+    flex-direction:column;
+    width:50vw;
+    background-color: bisque;
+    margin: 10px;
+}
+bottun{
+    display:flex;
+    jastify-content:center;
+    align-items: center;
+    width:90vw;
+}
+commentDiv{
+    width:20vw;
+    background-color: blanchedalmond;
+    margin: 10px;
+}
+posts{
+    background-color: azure;
+    margin: 10px;
+}
+

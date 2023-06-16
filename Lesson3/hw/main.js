@@ -5,53 +5,52 @@
 //
 // // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 // for (let i = 0; i < 10; i++) {
-//     document.write(`<div>SOME TEXT with ${i} index</div>`);
+//     document.write(`<div>SOME TEXT, index${i}</div>`);
 // }
 //
-// // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+// // - За допомогою циклу while вивести в документ 20 блоків h5 c довільним текстом всередині.
 // let i = 0;
 // while (i < 20) {
-//     document.write(`<h1>SOME H1</h1>`);
+//     document.write(`<h5>SOME H5</h5>`);
 //     i++
 // }
 //
-// // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+// // - За допомогою циклу while вивести в документ 20 блоків h5 c довільним текстом і індексом всередині.
 // let y = 0;
 // while (y < 20) {
-//     document.write(`<h1>SOME H1 with ${y} index</h1>`);
+//     document.write(`<h5>SOME H5 with index${y}</h5>`);
 //     y++
 // }
-//
-// // - Використовуючи данні з масиву, за допомоги document.write та циклу
-// // побудувати структуру по шаблону
-// // ШАБЛОН:
-// //     <ul>
-// //         <li>ITEM OF ARRAY</li>
-// //         <!--
-// //             і тд інші об'єкти масиву
-// //              ...
-// //              ...
-// //              ...
-// //         -->
-// //     </ul>
-// // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
+// - Використовуючи данні з масиву, за допомоги document.write та циклу
+// побудувати структуру по шаблону
+// ШАБЛОН:
+//     <ul>
+//         <li>ITEM OF ARRAY</li>
+//         <!--і тд інші об'єкти масиву
+//              ...
+//              ...
+//              ... -->
+//     </ul>
+// замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
+
+
 // let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 // document.write(`<ul>`)
 // for (const item of listOfItems) {
 //     document.write(`<li>${item}</li>`)
 // }
-// document.write(`</ul>`)
-//
-// // -----------------------------------------------
-// //     Використовуючи данні з масиву, за допомоги document.write та циклу
-// // побудувати структуру по шаблону
-// // Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
-// // ШАБЛОН
-// // <div class="product-card">
-// //     <h3 class="product-title">TITLE. Price - PRICE</h3>
-// // <img src="IMAGE" alt="" class="product-image">
-// // </div>
-// // Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
+// document.write(`</ul>`);
+
+// -----------------------------------------------
+//     Використовуючи данні з масиву, за допомоги document.write та циклу
+// побудувати структуру по шаблону
+// Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
+// ШАБЛОН
+// <div class="product-card">
+//     <h3 class="product-title">TITLE. Price - PRICE</h3>
+// <img src="IMAGE" alt="" class="product-image">
+// </div>
+// Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
 // let products = [
 //     {
 //         title: 'milk',
@@ -83,8 +82,8 @@
 //     `)
 // }
 
-// // --------------------
-// //     є масив
+// --------------------
+//     є масив
 // let users = [
 //     {name: 'vasya', age: 31, status: false},
 //     {name: 'petya', age: 30, status: true},
@@ -101,68 +100,61 @@
 // console.log(users)
 // // за допомоги циклу вивести:
 // // - користувачів зі статусом true
-// for (const user of users) {
+// for (const user of users){
 //     if (user.status) {
-//         document.write(`<div>${user.name} - ${user.age} - ${user.status}</div>`);
-//     }
+//         document.write (`<div>${user.name} - ${user.age} - ${user.status}</div>`);
+// }
 // }
 // document.write('<hr>')
-// // - користувачів зі статусом false
-// for (const user of users) {
-//     if (!user.status) {
-//         document.write(`<div>${user.name} - ${user.age} - ${user.status}</div>`);
-//     }
-// }
-// document.write('<hr>')
-// // - користувачів які старші за 30 років
+// - користувачів які старші за 30 років
 // for (const user of users) {
 //     if (user.age > 30) {
 //         document.write(`<div>${user.name} - ${user.age} - ${user.status}</div>`);
 //     }
 // }
+//Додатковi завдання
 
-
+// let books = [
+//     {
+//         title: 'Deception Point',
+//         pageCount: 560,
+//         genre: ['Mystical detective'],
+//         authors: ['Dan Brown', 'author 2'],
+//     },
+//     {
+//         title: 'The Churchill Factor',
+//         pageCount: 730,
+//         genre: ['Political figures'],
+//         authors: ['Boris Johnson']
+//     },
+//     {
+//         title: 'Три товариші',
+//         pageCount: 679,
+//         genre: ['Classical prose'],
+//         authors: ['Еріх Марія Ремарк']
+//     },
+//     {
+//         title: 'Atomic HabitsAtomic HabitsAtomic HabitsAtomic Habits',
+//         pageCount: 299,
+//         genre: ['Self development', 'Motivation'],
+//         authors: ['author 1', 'author 2'],
+//     },
+//     {
+//         title: 'The Fine Art Of Small Talk',
+//         pageCount: 74,
+//         genre: ['Social communications'],
+//         authors: ['author 1', 'author 2', 'author 3', 'author 4'],
+//     },
+//     {
+//         title: 'The Book Thief',
+//         pageCount: 412,
+//         genre: ['Modern prose'],
+//         authors: ['author 1', 'author 2'],
+//     }
 //
-let books = [
-    {
-        title: 'Deception Point',
-        pageCount: 560,
-        genre: ['Mystical detective'],
-        authors: ['Dan Brown', 'author 2'],
-    },
-    {
-        title: 'The Churchill Factor',
-        pageCount: 730,
-        genre: ['Political figures'],
-        authors: ['Boris Johnson']
-    },
-    {
-        title: 'Три товариші',
-        pageCount: 679,
-        genre: ['Classical prose'],
-        authors: ['Еріх Марія Ремарк']
-    },
-    {
-        title: 'Atomic HabitsAtomic HabitsAtomic HabitsAtomic Habits',
-        pageCount: 299,
-        genre: ['Self development', 'Motivation'],
-        authors: ['author 1', 'author 2'],
-    },
-    {
-        title: 'The Fine Art Of Small Talk',
-        pageCount: 74,
-        genre: ['Social communications'],
-        authors: ['author 1', 'author 2', 'author 3', 'author 4'],
-    },
-    {
-        title: 'The Book Thief',
-        pageCount: 412,
-        genre: ['Modern prose'],
-        authors: ['author 1', 'author 2'],
-    }
+// ]
 
-]
-// // - знайти книжку/ки з найдовшою назвою
+//   знайти книжку/ки з найдовшою назвою
 // let result = books[0];
 // for (const book of books) {
 //     if (book.title.length > result.title.length) {
@@ -170,6 +162,8 @@ let books = [
 //     }
 // }
 // console.log(result);
+
+
 // - знайти книжку/ки з найдовшою назвою
 // let result = books[0];
 // for (let i = 0; i < books.length; i++) {
@@ -179,7 +173,7 @@ let books = [
 // }
 // console.log(result);
 
-// - знайти книжку/ки які писав 1 автор
+// - знайти книжку/ки, які писав 1 автор.
 // let result = [];
 // for (const book of books) {
 //     if (book.authors.length === 1) {
@@ -188,12 +182,12 @@ let books = [
 // }
 // console.log(result);
 
-// - знайти книжку які писав 1 автор
-let result;
-for (const book of books) {
-    if (book.authors.length === 1) {
-        result = book;
-        break;
-    }
-}
-console.log(result);
+// - знайти книжку, які писав 1 автор.
+// let result;
+// for (const book of books) {
+//     if (book.authors.length === 1) {
+//         result = book;
+//         break;
+//     }
+// }
+// console.log(result);

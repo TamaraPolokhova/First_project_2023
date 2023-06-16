@@ -54,8 +54,8 @@ console.log(users[9].password);
 // Логічні розгалуження:
 //     - Є змінна х, якій ви надаєте довільне числове значення.
 //     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
-const var7 = 0;
-if (var7 !== 0) {
+const a = -3;
+if (a !== 0) {
     console.log('Вірно');
 } else {
     console.log('Невірно');
@@ -63,7 +63,7 @@ if (var7 !== 0) {
 
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
-const time = 60;
+const time = 59;
 if (time >= 0 && time < 15) {
     console.log('першу')
 } else if (time >= 15 && time < 30) {
@@ -89,28 +89,28 @@ if (day >= 1 && day <= 10) {
 }
 
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
-const dayOfWeek = 1;
+const dayOfWeek = 5;
 switch (dayOfWeek) {
     case 1:
-        console.log('Понеділок')
+        console.log('Monday')
         break;
     case 2:
-        console.log('Вівторок')
+        console.log('Tuethday')
         break;
     case 3:
-        console.log('Середа')
+        console.log('Wenthday')
         break;
     case 4:
-        console.log('Четвер')
+        console.log('Thursday')
         break;
     case 5:
-        console.log('Пт')
+        console.log('Fraiday')
         break;
     case 6:
-        console.log('Сб')
+        console.log('Saturday')
         break;
     case 7:
-        console.log('Нд')
+        console.log('Sunday')
         break;
     default:
         console.error("ERROR");
@@ -119,8 +119,8 @@ switch (dayOfWeek) {
 //     - Користувач вводить або має два числа.
 //         Потрібно знайти та вивести максимальне число з тих двох .
 //         Також потрібно врахувати коли введені рівні числа.
-const number1 = 2
-const number2 = 232
+const number1 = 530
+const number2 = 550
 if (number1 < number2) {
     console.log("друге більше", number2)
 } else if (number1 > number2) {
@@ -131,7 +131,7 @@ if (number1 < number2) {
 
 //     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
-let x = -0;
+let x = '';
 if (x === '' || x === null || x === undefined || x === 0) {
     x = 'default';
 }
