@@ -33,15 +33,3 @@ function recursiveBuild(object, parent) {
             : liCreator(key, object[key], parent)
     }
 }
-fetch(`https://jsonplaceholder.typicode.com/users/USER_ID/posts`)
-     .then((respons) => respons.json())
-     .then((users) => {
-         for (const user of users) {
-             const button= document.createElement('button');
-             button.innerText='post of current user';
-             button.onclick =() => {
-                 document.write (title[userId]);
-             }
-         }
-
-     })
